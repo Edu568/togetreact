@@ -1,4 +1,5 @@
 import './card.js';
+import './itemListContainer';
 
 export const ItemCount = () => {
 

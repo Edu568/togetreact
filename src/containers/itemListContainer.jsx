@@ -1,7 +1,27 @@
 
-import '../App.css';
-import { ItemCount} from '../components/itemCount';
+import * as React from "react";
+import productlist from "../../moks/productlist"
 
+const itemListContainer = {()} => {
+    const [products, setProducts] = React.useState([])
+    
+    React.useEffect(() => {
+    const mypromise =  new Promise(resolve, reject) => {
+        setTimeout(() => resolve(productlist), 5000);
+    });
+    mypromise.then(result) => setProducts(result)
+        
+        
+    return (
+            <div>
+                <h2>greeting</h2>
+            </div>
+    );
+    };
+
+};
+
+export default itemListContainer;
 
 
 
