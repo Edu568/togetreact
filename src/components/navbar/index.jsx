@@ -1,27 +1,31 @@
-
+import "./navbar.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 
-
-const NavbarComponent = () => {
+const Navbar = () => {
   return (
     <>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Equipos</a></li>
-            <li><a href="">Ingresa</a></li>
-            <li><a href="">Registrate</a></li>
-            <cartwidget/><i class="bi bi-cart"></i>
-            
-            
+   <nav className="navigation">
+     <div className="logo">To Get</div>
+     <span class="menu-icon"></span>
+      <nav class="navigation">
+        <ul className="show">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="equipos.html">Equipos</a></li>
+          <li><a href="ingresa.html">Ingresa</a></li>
+          <li><a href="registrate.html">Registrate</a></li>
+          <li>
+            <ShoppingCartIcon/>{""}
+          </li>
         </ul>
+      </nav>
     </nav>
 
     
     </>
   );
-  ReactDOM.render(cartwidget, document)
-}
+  
+};
 
-export default NavbarComponent;
+export default Navbar

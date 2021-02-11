@@ -1,4 +1,4 @@
-import "./style.css";
+import './card.js';
 
 export const ItemCount = () => {
 
@@ -15,3 +15,5 @@ export const ItemCount = () => {
         </>
     );
 };
+
+export default ItemCount
